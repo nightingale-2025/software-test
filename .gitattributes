@@ -1,0 +1,15 @@
+# 统一换行符为 LF：仓库与工作区保持一致，避免 Windows/Linux 之间的换行符差异
+# text=auto 让 Git 自动识别文本文件；下面对常见二进制文件显式声明，防止被误判
+* text=auto eol=lf
+
+# 二进制文件（不做换行符转换）
+*.png   binary
+*.jpg   binary
+*.jpeg  binary
+*.gif   binary
+*.ico   binary
+*.pdf   binary
+*.zip   binary
+*.gz    binary
+*.xlsx  binary
+*.docx  binary
